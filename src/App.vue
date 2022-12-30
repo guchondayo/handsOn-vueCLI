@@ -8,7 +8,7 @@ import HelloWorld1 from './components/HelloWorld1'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld1
   }
 }
 </script>
