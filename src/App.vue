@@ -3,12 +3,12 @@
 </template>
 
 <script>
-import InsertTest from './components/InsertTest'
+import HelloWorld from './components/InsertTest'
 
 export default {
   name: 'App',
   components: {
-    InsertTest
+    HelloWorld
   }
 }
 </script>
