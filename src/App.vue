@@ -3,12 +3,12 @@
 </template>
 
 <script>
-import Inheritances from './components/inheritance.vue'
+import HelloWorld1 from './components/HelloWorld1'
 
 export default {
   name: 'App',
   components: {
-    Inheritances
+    HelloWorld
   }
 }
 </script>
