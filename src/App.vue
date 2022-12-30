@@ -1,28 +1,15 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <p>テンプレートそれ自身は、一番上に表示されるのである</p>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld1.vue'
+import Inheritances from './components/inheritance.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Inheritances
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
