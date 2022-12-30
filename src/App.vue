@@ -4,7 +4,7 @@
 </template>
 
 <script>
-
+import TestWorld from "./components/TestWorld.vue"
 export default {
   name: 'App',
   components: {
