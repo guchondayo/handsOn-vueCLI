@@ -1,7 +1,8 @@
 <template>
     <div>
         <p>継承されました</p>
-        <p>{{ name }}</p>        
+        <p>{{ name.name }}</p> 
+        <p>{{ name.address }}</p>         
     </div>
 </template>
 <script>

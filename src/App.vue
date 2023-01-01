@@ -14,7 +14,7 @@ import HeaderComponents from "./components/HeaderComponents.vue"
 export default{
   data:function(){
     return {
-      checkName:"動的だ！",
+      checkName:{name:"ゆうと",address:"相模原"},
     }
   },
   components: {
