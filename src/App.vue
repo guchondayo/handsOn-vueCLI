@@ -3,7 +3,7 @@
 <!-- タグ忘れがち -->
 <template>
   <div id="app">
-    <p>まずは表示</p>
+    <p>{{ titleCom }}</p>
     <HeaderComponents></HeaderComponents>
   </div>
 </template>
@@ -13,6 +13,11 @@
 import HeaderComponents from "./components/HeaderComponents.vue"
 // 継承したい時は、インポートしたcomponentを使って、テンプレートを継承しよう
 export default{
+  data:function(){
+    return {
+      titleCom:"data成功"
+    }
+  },
   components: {
     HeaderComponents
   }
