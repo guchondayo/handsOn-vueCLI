@@ -2,7 +2,7 @@
     <div>
         <p>継承されました</p>
         <p>{{ name.name }}</p> 
-        <p>{{ name.address }}</p>         
+        <p>{{ name.address }}</p> 
     </div>
 </template>
 <script>
@@ -15,7 +15,7 @@ export default{
         name: {
             type: String, // String型に限定
             required: true, // 必須項目
-        }
+        },
     }
 }
 
