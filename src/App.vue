@@ -4,7 +4,8 @@
 <template>
   <div id="app">
     <p>{{ titleCom }}</p>
-    <HeaderComponents></HeaderComponents>
+    <p>{{ checkPro }}</p>
+    <HeaderComponents name="谷口"></HeaderComponents>
   </div>
 </template>
 
@@ -15,7 +16,8 @@ import HeaderComponents from "./components/HeaderComponents.vue"
 export default{
   data:function(){
     return {
-      titleCom:"data成功"
+      titleCom:"data成功",
+      checkPro:"prop始めました",
     }
   },
   components: {
