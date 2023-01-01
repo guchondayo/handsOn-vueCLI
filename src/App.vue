@@ -1,28 +1,20 @@
+<!-- テンプレートを表示させること -->
+<!-- id忘れがち -->
+<!-- タグ忘れがち -->
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <p>まずは表示</p>
+    <HeaderComponents></HeaderComponents>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld1.vue'
-
-export default {
-  name: 'App',
+// 継承したい時は、前回と同じように、テンプレートを継承しよう
+import HeaderComponents from "./components/HeaderComponents.vue"
+// 継承したい時は、インポートしたcomponentを使って、テンプレートを継承しよう
+export default{
   components: {
-    HelloWorld
+    HeaderComponents
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

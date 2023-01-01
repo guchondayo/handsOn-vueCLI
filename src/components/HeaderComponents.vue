@@ -1,5 +1,7 @@
 <template>
-    <p>VueCliまじわかんねぇ</p>
+    <div>
+        <p>継承されました</p>
+    </div>
 </template>
 <style>
     p{

@@ -1,9 +1,13 @@
-import Vue from 'vue'
-import App from './App.vue'
-
-// これはあってもなくても、、
-Vue.config.productionTip = false
-
+//Vueをあらかじめインストールしていれば、new VueのVueをインストールすることができる
+import Vue from "vue";
+//Vueファイルにテンプレートと処理を切り出すには、vueファイルを継承
+import App from "./App";
+// インポートしておけばVueが生成できる
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+  el:"#app",
+  render:function(r){
+    return r(App)
+  }
+})
+//テンプレートを表示するにはrenderしてあげないとだめ
+// IDの紐付け忘れがち
