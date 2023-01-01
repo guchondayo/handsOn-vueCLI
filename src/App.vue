@@ -3,9 +3,7 @@
 <!-- タグ忘れがち -->
 <template>
   <div id="app">
-    <p>{{ titleCom }}</p>
-    <p>{{ checkPro }}</p>
-    <HeaderComponents name="谷口"></HeaderComponents>
+    <HeaderComponents :name="checkName"></HeaderComponents>
   </div>
 </template>
 
@@ -16,8 +14,7 @@ import HeaderComponents from "./components/HeaderComponents.vue"
 export default{
   data:function(){
     return {
-      titleCom:"data成功",
-      checkPro:"prop始めました",
+      checkName:"動的だ！",
     }
   },
   components: {
