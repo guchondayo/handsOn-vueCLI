@@ -5,12 +5,17 @@
         <p>{{ number}}</p> 
         <p>{{ profile.name}}</p> 
         <p>{{ profile.address}}</p>
+        <!-- //v-forの書き方がめんどくさい。配列出力するだけども、indexがいるということを念頭においておかなければならない -->
+        <ul>
+           <li v-for="(pref, index) in prefs" :key=index>{{ pref }}</li>
+        </ul>
     </div>
 </template>
 <script>
 export default{
     data:function(){
         return {
+
         }
     },
     props: {
@@ -24,6 +29,9 @@ export default{
         },
         profile:{
         type: Object //ここ間違えるとエラーになる
+        },
+        prefs:{
+        type: Array
         }
     }
 }

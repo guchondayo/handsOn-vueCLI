@@ -3,7 +3,7 @@
 <!-- タグ忘れがち -->
 <template>
   <div id="app">
-    <HeaderComponents :name=checkName :number=checkNumber :profile=myProfile></HeaderComponents>
+    <HeaderComponents :name=checkName :number=checkNumber :profile=myProfile :prefs=myPrefs></HeaderComponents>
   </div>
 </template>
 
@@ -16,7 +16,8 @@ export default{
     return {
       checkName:"谷口",
       checkNumber:200,
-      myProfile:{name:"谷口",address:"神奈川県"}
+      myProfile:{name:"谷口",address:"神奈川県"},
+      myPrefs:["東京","神奈川","埼玉","千葉"]
     }
   },
   components: {
