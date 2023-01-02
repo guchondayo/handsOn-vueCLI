@@ -3,7 +3,7 @@
 <!-- タグ忘れがち -->
 <template>
   <div id="app">
-    <HeaderComponents :name=checkName :number=checkNumber :profile=myProfile :prefs=myPrefs></HeaderComponents>
+    <HeaderComponents></HeaderComponents>
   </div>
 </template>
 
@@ -14,10 +14,6 @@ import HeaderComponents from "./components/HeaderComponents.vue"
 export default{
   data:function(){
     return {
-      checkName:"谷口",
-      checkNumber:200,
-      myProfile:{name:"谷口",address:"神奈川県"},
-      myPrefs:["東京","神奈川","埼玉","千葉"]
     }
   },
   components: {
