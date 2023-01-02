@@ -1,9 +1,10 @@
 <template>
     <div>
         <p v-if="getOrNot">表示された</p>
-        <!-- <p v-show="getOrNot">表示された</p> -->
-        <!-- //v-forの書き方がめんどくさい。配列出力するだけども、indexがいるということを念頭においておかなければならない -->
-
+        <p>{{ callNumByMethods() }}</p>
+        <p>{{ callNumByComputed }}</p>
+        <p>{{ callNumByComputedIfMath }}</p>
+        <p>{{ callNumByComputedIfMath }}</p>
     </div>
 </template>
 <script>
@@ -12,7 +13,21 @@ export default{
         return {
             getOrNot:true
         }
+    },
+    methods:{
+        callNumByMethods:function(){
+            return 100;
+        },
+    },
+    computed: {
+            callNumByComputed: function () {
+            return  200 + 300
+            },
+            callNumByComputedIfMath: function () {
+            return  Math.random()
+            }
     }
+    //よくある凡ミスとして、computedをメソッドの中に格納してしまう
 }
 </script>
 <style>
