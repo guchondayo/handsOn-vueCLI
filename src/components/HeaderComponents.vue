@@ -1,33 +1,33 @@
 <template>
     <div>
-        <p v-if="getOrNot">表示された</p>
-        <p>{{ callNumByMethods() }}</p>
-        <p>{{ callNumByComputed }}</p>
-        <p>{{ callNumByComputedIfMath }}</p>
-        <p>{{ callNumByComputedIfMath }}</p>
+        <p>以下をクリックすると中身が検知されます</p>
+        <button v-on:click="checkConsole()">中身を確認</button>
     </div>
 </template>
 <script>
 export default{
     data:function(){
         return {
-            getOrNot:true
+            result:true
+        }
+    },
+    watch:{
+        result:function(newVal, oldVal){
+            console.log(newVal,oldVal)
+            console.log("変化を感知いたしました")
         }
     },
     methods:{
-        callNumByMethods:function(){
-            return 100;
-        },
-    },
-    computed: {
-            callNumByComputed: function () {
-            return  200 + 300
-            },
-            callNumByComputedIfMath: function () {
-            return  Math.random()
+        checkConsole:function(){
+            if(this.result === true){
+                this.result = false
+            }else{
+                this.result = true
             }
+            console.log(this.result)
+            return this.result
+        }
     }
-    //よくある凡ミスとして、computedをメソッドの中に格納してしまう
 }
 </script>
 <style>
