@@ -16,8 +16,10 @@ export default{
     return {
     }
   },
+//コンポねんとは複数登録できる
   components: {
     HeaderComponents
   }
 }
 </script>
+
