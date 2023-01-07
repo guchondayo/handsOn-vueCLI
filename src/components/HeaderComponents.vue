@@ -3,11 +3,8 @@
        <input type="text" v-model=checkModel />
        <input type="text" v-model=checkModel />
        <router-view></router-view>
+       <!-- 画面遷移がめちゃ楽になる -->
        <router-link to="/about">About</router-link>
-    {{ checkModel }}
-        <!-- <p v-show="getOrNot">表示された</p> -->
-        <!-- //v-forの書き方がめんどくさい。配列出力するだけども、indexがいるということを念頭においておかなければならない -->
-
     </div>
 </template>
 <script>
