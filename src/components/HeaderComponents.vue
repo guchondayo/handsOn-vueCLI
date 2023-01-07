@@ -2,7 +2,8 @@
     <div>
        <input type="text" v-model=checkModel />
        <input type="text" v-model=checkModel />
-       <router-link to="/">About</router-link>
+       <router-view></router-view>
+       <router-link to="/about">About</router-link>
     {{ checkModel }}
         <!-- <p v-show="getOrNot">表示された</p> -->
         <!-- //v-forの書き方がめんどくさい。配列出力するだけども、indexがいるということを念頭においておかなければならない -->

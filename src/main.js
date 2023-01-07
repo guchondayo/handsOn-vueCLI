@@ -2,23 +2,13 @@
 import Vue from "vue";
 //Vueファイルにテンプレートと処理を切り出すには、vueファイルを継承
 import App from "./App";
-import AboutComponents from "./AboutComponents";
-import VueRouter from "vue-router"
 
-Vue.use(VueRouter)
-
-let routes = [
-  { 
-      path: '/about',
-      name: 'aba',
-      component: AboutComponents 
-  },
-]
+import routes from "./router.js"
 
 //routerを追加する
 new Vue({
   el:"#app",
-  routes,
+  router:routes,
   render:function(r){
     return r(App)
   }
