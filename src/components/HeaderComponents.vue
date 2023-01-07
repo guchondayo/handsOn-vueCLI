@@ -1,23 +1,19 @@
 <template>
     <div>
-       <input type="text" v-model=checkModel />
-       <input type="text" v-model=checkModel />
-       <router-view></router-view>
-       <!-- 画面遷移がめちゃ楽になる -->
-       <router-link to="/about">About</router-link>
+       <button v-on:click="sendMessage">ボタンを押してみる</button>
     </div>
 </template>
 <script>
 export default{
     data:function(){
         return {
-            getOrNot:true,
-            checkModel:""
+            sendData:"データが送られました"
         }
     },
-    watch:{
-        checkModel:function(val){
-            console.log(val)
+    methods:{
+        sendMessage:function(){
+            console.log("こんにちわ")
+            // this.$emit('catchMessage', this.message);
         }
     }
 }

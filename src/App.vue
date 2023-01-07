@@ -1,6 +1,3 @@
-<!-- テンプレートを表示させること -->
-<!-- id忘れがち -->
-<!-- タグ忘れがち -->
 <template>
   <div id="app">
     <HeaderComponents></HeaderComponents>
