@@ -12,8 +12,7 @@ export default{
     },
     methods:{
         sendMessage:function(){
-            console.log("こんにちわ")
-            // this.$emit('catchMessage', this.message);
+            this.$emit('catchMessage', this.sendData);
         }
     }
 }
