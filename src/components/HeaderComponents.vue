@@ -1,6 +1,6 @@
 <template>
     <div>
-       <button v-on:click="sendMessage">ボタンを押してみる</button>
+       {{ $store.state.message }}
     </div>
 </template>
 <script>
@@ -11,9 +11,6 @@ export default{
         }
     },
     methods:{
-        sendMessage:function(){
-            this.$emit('catchMessage', this.sendData);
-        }
     }
 }
 </script>

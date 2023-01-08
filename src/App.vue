@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <HeaderComponents @catchMessage="displayMessage"></HeaderComponents>
+    <HeaderComponents></HeaderComponents>
     {{ receiveData }}
+    {{  }}
   </div>
 </template>
 
@@ -20,9 +21,7 @@ export default{
     HeaderComponents
   },
   methods:{
-    displayMessage:function(e){
-      this.receiveData = e
-    }
+
   }
 
 }
