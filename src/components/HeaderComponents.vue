@@ -1,17 +1,19 @@
 <template>
     <div>
-       {{ $store.state.message }}
+        {{ sendData }}
     </div>
 </template>
 <script>
+
 export default{
     data:function(){
         return {
-            sendData:"データが送られました"
+            sendData:"データが送られました",
         }
     },
     methods:{
-    }
+    },
+    
 }
 </script>
 <style>
