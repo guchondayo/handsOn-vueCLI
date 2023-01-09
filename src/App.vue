@@ -2,7 +2,6 @@
   <div id="app">
     <HeaderComponents></HeaderComponents>
     {{ receiveData }}
-    {{ te }}
   </div>
 </template>
 
@@ -12,12 +11,10 @@ import HeaderComponents from "./components/HeaderComponents.vue"
 // 継承したい時は、インポートしたcomponentを使って、テンプレートを継承しよう
 
 import store from "./store"
-import testore from "./testore"
 export default{
   data:function(){
     return {
       receiveData:store.state.messeage,
-      te:testore.testUto
     }
   },
 //コンポねんとは複数登録できる
