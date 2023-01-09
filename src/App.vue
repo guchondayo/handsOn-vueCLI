@@ -2,6 +2,7 @@
   <div id="app">
     <HeaderComponents></HeaderComponents>
     {{ receiveData }}
+    <!-- <button v-on:click="increment"></button> -->
   </div>
 </template>
 
@@ -32,5 +33,12 @@ export default{
 // ＊モジュールをインポートすればデータの使い回しが簡単にできる
 // 普通にエクスポートするだけじゃダメなのかな？
 
+// mutation
+// Vuex のストアの状態を変更できる唯一の方法
+
+//別モジュールから変更するにはおんなじようにcommitして変更してみよう
+store.commit('increment',100)
+console.log(store.state.count)
+// https://dev83.com/vue-vuex04/
 </script>
 

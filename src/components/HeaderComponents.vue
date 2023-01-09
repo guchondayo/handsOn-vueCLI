@@ -1,9 +1,9 @@
 <template>
     <div>
-        {{ sendData }}
     </div>
 </template>
 <script>
+
 
 export default{
     data:function(){
@@ -13,7 +13,6 @@ export default{
     },
     methods:{
     },
-    
 }
 </script>
 <style>
