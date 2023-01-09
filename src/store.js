@@ -6,12 +6,18 @@ Vue.use(Vuex);
 const store = new Vuex.Store({
     state:{
         messeage:'Hello Vuex',
-        count:0
+        count:0,
+        getGetterGettist:"GETTER取れたよ"
     },
     mutations:{
         increment (state, n) {
             state.count += n
           }
+    },
+    getters: {
+        toreteYokatta (state){
+            console.log(state.getGetterGettist)
+        }
     }
 })
 

@@ -2,7 +2,6 @@
   <div id="app">
     <HeaderComponents></HeaderComponents>
     {{ receiveData }}
-    <!-- <button v-on:click="increment"></button> -->
   </div>
 </template>
 
@@ -39,6 +38,13 @@ export default{
 //別モジュールから変更するにはおんなじようにcommitして変更してみよう
 store.commit('increment',100)
 console.log(store.state.count)
+
 // https://dev83.com/vue-vuex04/
+// getterについて
+// https://uncle-javascript.com/vuex-getters
+
+//getterが取れてよかった
+store.getters.toreteYokatta
+
 </script>
 
