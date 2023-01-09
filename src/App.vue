@@ -29,5 +29,9 @@ export default{
 // でもこうやって、エクスポートしたデータをインポートしながらしかできないんだなと実感した
 // https://stackoverflow.com/questions/41063959/why-is-store-not-defined
 
+// ＊store.jsというところにデータを格納する
+// ＊モジュールをインポートすればデータの使い回しが簡単にできる
+// 普通にエクスポートするだけじゃダメなのかな？
+
 </script>
 
